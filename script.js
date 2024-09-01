@@ -1,5 +1,8 @@
-const header = document.querySelector("header");
 
-window.addEventListener ("scroll", function(){
-    header.classList.toggle ("sticky", window.scrollY > 200)
-})
+document.getElementById('menu-icon').addEventListener('click', function() {
+    document.querySelector('.navlist').classList.add('active');
+});
+
+document.querySelector('.close-btn').addEventListener('click', function() {
+    document.querySelector('.navlist').classList.remove('active');
+});

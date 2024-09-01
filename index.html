@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="r.png" type="image/png">
     <title>Personal Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -18,124 +18,138 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,
-    500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
 </head>
-<body>
-    <header class="d-flex justify-content-between align-items-center p-3">
-        <a href="#" class="logo"><img src="img/r.png"></a>
-            <ul class="navlist d-flex">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>   
-            <div class="bx bx-menu" id="menu-icon"></div>    
-    </header>
+<body data-bs-theme="dark">
+   <header class="d-flex justify-content-between align-items-center p-3 bg-light">
+    <a href="#" class="logo"><img src="./r.png" alt="Logo" class="img-fluid"></a>
+    <div class="d-flex align-items-center">
+        <ul class="navlist list-unstyled d-none d-md-flex">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+        </ul>
+        <i class="bx bx-menu d-md-none" id="menu-icon"></i>
+        <i class="fas fa-times close-btn d-md-none"></i>
+    </div>
+</header>
 
-    <section class="home" id="home">
-        <div class="hero-text">
-            
+
+    <section class="home text-center text-white d-flex align-items-center text-light bg-dark"id="home" style="min-height: 100vh; background-color: #333;">
+        <div class="container">
+            <div class="hero-text">
                 <h3>Hello, this is</h3>
                 <h1>Rovannah Eliot Delola</h1>
                 <h4>Web Designer and Programmer</h4>
-                <a href="https://docs.google.com/document/d/1c1BhavJsj7xa0ZLJLBEyvYAj9Bqbd3V5/edit?usp=sharing&ouid=113060766542899198174&rtpof=true&sd=true" class="btn">My CV</a>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/rara.png">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <h5>I am Web Designer <span>& Programmer</span></h5>
-                <p>
-                    As a Dean's Lister during my 1st Year (1st Semester) and 2nd Year (1st Semester), 
-                    I demonstrated a strong academic commitment. In addition to my studies, I gained practical 
-                    experience during my Senior High School On-the-Job Training (OJT) at the 4Ps office in our municipality. 
-                    My role as an assistant involved encoding important information and managing clerical tasks such as printing and photocopying documents, 
-                    which contributed to the successful completion of my OJT requirements.
-                    Member of the CSU Society of Information Technology Students (SITES) since 2022, with additional skills in Internet and web navigation, 
-                    office software, basic networking, and basic computer operations.
-                </p>
+                <a href="https://docs.google.com/document/d/1c1BhavJsj7xa0ZLJLBEyvYAj9Bqbd3V5/edit?usp=sharing&ouid=113060766542899198174&rtpof=true&sd=true" class="btn btn-primary mt-3">My CV</a>
             </div>
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
-        <div class="text-center">
+    <section class="about py-5 text-light bg-dark" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="./rara.png" class="img-fluid mb-3" alt="About Image">
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <h5>I am a Web Designer <span>& Programmer</span></h5>
+                        <p>
+                            As a Dean's Lister during my 1st Year (1st Semester) and 2nd Year (1st Semester), 
+                            I demonstrated a strong academic commitment. In addition to my studies, I gained practical 
+                            experience during my Senior High School On-the-Job Training (OJT) at the 4Ps office in our municipality. 
+                            My role as an assistant involved encoding important information and managing clerical tasks such as printing and photocopying documents, 
+                            which contributed to the successful completion of my OJT requirements.
+                            Member of the CSU Society of Information Technology Students (SITES) since 2022, with additional skills in Internet and web navigation, 
+                            office software, basic networking, and basic computer operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio py-5 text-light bg-dark" id="portfolio">
+        <div class="container text-center">
             <h2>My Portfolio</h2>
             <h4>Get to know me more!</h4>
-        </div>
-
-        <div class="portfolio-item">
-            <div class="portfolio-box">
-                <i class='bx bxs-certification'></i>
-                <h3>CERTIFICATIONS</h3>
-                <p>I have earned several certifications that highlight my foundational knowledge in web development and programming. 
-                    On January 21, 2024, I completed courses in HTML and CSS through SoloLearn, followed by a JavaScript course on 
-                    March 22, 2024. Additionally, I expanded my programming expertise by completing both introductory and intermediate 
-                    Java courses on April 20, 2024, also through SoloLearn. Furthermore, I gained practical experience during my On-the-Job 
-                    Training (OJT) with the Local Government Unit (LGU) of Placer, Surigao Del Norte, Philippines, which I successfully 
-                    completed on December 1, 2021.</p>
-                <a href="#" class="s-btnn">See More</a>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="portfolio-box p-4 shadow-sm">
+                        <i class='bx bxs-certification display-4 mb-3'></i>
+                        <h3>CERTIFICATIONS</h3>
+                        <p>I have earned several certifications that highlight my foundational knowledge in web development and programming. 
+                            On January 21, 2024, I completed courses in HTML and CSS through SoloLearn, followed by a JavaScript course on 
+                            March 22, 2024. Additionally, I expanded my programming expertise by completing both introductory and intermediate 
+                            Java courses on April 20, 2024, also through SoloLearn. Furthermore, I gained practical experience during my On-the-Job 
+                            Training (OJT) with the Local Government Unit (LGU) of Placer, Surigao Del Norte, Philippines, which I successfully 
+                            completed on December 1, 2021.</p>
+                        <a href="#" class="btn btn-outline-primary">See More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <div class="portfolio-box p-4 shadow-sm">
+                        <i class='bx bx-mobile-alt display-4 mb-3'></i>
+                        <h3>PROJECTS PORTFOLIO</h3>
+                        <p>CampusCare. This application designed to facilitate seamless communication between university students, staff, and administration. 
+                            It enables users to report issues, provide, feedback on services, file complaints, and offer suggestions for enhancing 
+                            university experiences. Through CampusCare, users can actively contribute to improving campus services and overall satisfaction.</p>
+                        <a href="#" class="btn btn-outline-primary">See More</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="portfolio-box">
-                <i class='bx bx-mobile-alt'></i>
-                <h3>PROJECTS PORTFOLIO</h3>
-                <p>CampusCare.
-                This application designed to facilitate seamless communication between university students, staff, and administration. 
-                It enables users to report issues, provide, feedback on services, file complaints, and offer suggestions for enhancing 
-                university experiences. Through CampusCare, users can actively contribute to improving campus services and overall satisfaction.</p>
-            <a href="#" class="s-btnn">See More</a>
-            </div>
         </div>
-
     </section>
 
-    <section class="contact" id="contact">
-        <div class="left-contact">
-            <div class="in">
-                <a href="https://github.com/rovannahdelola"><i class="fab fa-github-square"></i></a>
-                <h4>Github</h4>
+    <section class="contact py-5 text-light bg-dark" id="contact">
+        <div class="container text-center ">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="in">
+                        <a href="https://github.com/rovannahdelola"><i class="fab fa-github-square display-3"></i></a>
+                        <h4>Github</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="in">
+                        <a href="https://mail.google.com/mail/u/0/#chat/home"><i class="fas fa-envelope display-3"></i></a>
+                        <h4>Gmail</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="in">
+                        <a href="#"><i class="fab fa-whatsapp-square display-3"></i></a>
+                        <h4>WhatsApp</h4>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="center-contact">
-            <div class="in">
-                <a href="https://mail.google.com/mail/u/0/#chat/home"><i class="fas fa-envelope"></i></a>
-                <h4>Gmail</h4>
-            </div>
-        </div>
-
-        <div class="right-contact">
-            <div class="in">
-                <a href="#"><i class="fab fa-whatsapp-square"></i></a>
-                <h4>WhatsApp</h4>
-            </div>
-        </div>
-
-    </section>  
-
-    <section class="end-section">
-        <h3>Rovannah Eliot Delola</h3>
-        <p>Thank you for visiting my website. If you have any questions or would like to collaborate, feel free to reach out.
-             I’m always excited to connect with like-minded individuals and explore new opportunities. Together, we can create 
-             something amazing!
-        </p>
     </section>
 
-    <a href="#" class="scroll-btnn"><i class='bx bx-chevron-up'></i></a>
+    <section class="end-section text-center py-4 text-light bg-dark">
+        <div class="container">
+            <h3>Rovannah Eliot Delola</h3>
+            <p>Thank you for visiting my website. If you have any questions or would like to collaborate, feel free to reach out.
+                I’m always excited to connect with like-minded individuals and explore new opportunities. Together, we can create 
+                something amazing!
+            </p>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <a href="#" class="scroll-btnn position-fixed bottom-0 end-0 p-3"><i class='bx bx-chevron-up'></i></a>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+   
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 
 </body>
 </html>
